@@ -1,7 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import DefaultTitleActionBar from 'src/components/base/DefaultTitleActionBar';
-import Dummy from 'src/features/dummy';
+import Dummy from 'src/features/Dummy';
 const Stack = createStackNavigator<RootStackParamList>();
 const NO_HEADER = {header: () => null};
 

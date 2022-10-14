@@ -100,7 +100,7 @@ class LoadingPortal extends React.Component<Props, State> {
           <View style={[StyleSheet.absoluteFill, styles.container]}>
             <View style={styles.placeholder} />
             <LottieView
-              source={require('src/assets/json/loading.json')}
+              source={require('src/assets/json/loader.json')}
               autoPlay
               loop
               style={styles.loading}
