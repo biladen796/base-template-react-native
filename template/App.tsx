@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   return (
-    <Provider store={store}> 
+    <Provider store={store}>  
       <StatusBar translucent backgroundColor="transparent" />
       <DrawerNavigation />
       <ModalPortal />
