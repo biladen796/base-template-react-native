@@ -11,6 +11,7 @@ module.exports = {
     'jest.config.js',
     'metro.config.js',
     'react-native.config.js',
+    'commitlint.config.js',
   ],
   extends: [
     '@react-native-community',

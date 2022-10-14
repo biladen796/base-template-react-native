@@ -182,7 +182,7 @@ export class ApiRunner<I, O> {
     const options = {
       method: this.method,
       url,
-      timeout: parseInt(REQUEST_TIMEOUT, 10),
+      timeout: parseInt(REQUEST_TIMEOUT || '6000', 10),
       headers: {
         ...this.baseConfig.defaultHeader(),
         ...(Boolean(this.headers) && this.headers),
