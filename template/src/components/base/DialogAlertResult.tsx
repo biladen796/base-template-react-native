@@ -96,38 +96,22 @@ export default class DialogAlertPortal {
           title ? (
             <View style={styles.titleContainer}>
               {alertType === AlertType.Error && (
-                <View
-                  style={[
-                    styles.iconContainer,
-                    {justifyContent: 'center', alignItems: 'center'},
-                  ]}>
+                <View style={[styles.iconContainer, styles.center]}>
                   <Svgs.IcError width={25} height={25} />
                 </View>
               )}
               {alertType === AlertType.Success && (
-                <View
-                  style={[
-                    styles.iconContainer,
-                    {justifyContent: 'center', alignItems: 'center'},
-                  ]}>
+                <View style={[styles.iconContainer, styles.center]}>
                   <Svgs.IcSuccess width={25} height={25} />
                 </View>
               )}
               {alertType === AlertType.Warning && (
-                <View
-                  style={[
-                    styles.iconContainer,
-                    {justifyContent: 'center', alignItems: 'center'},
-                  ]}>
+                <View style={[styles.iconContainer, styles.center]}>
                   <Svgs.IcWarning width={25} height={25} />
                 </View>
               )}
               {alertType === AlertType.Info && (
-                <View
-                  style={[
-                    styles.iconContainer,
-                    {justifyContent: 'center', alignItems: 'center'},
-                  ]}>
+                <View style={[styles.iconContainer, styles.center]}>
                   <Svgs.IcInfor width={25} height={25} />
                 </View>
               )}
@@ -149,7 +133,7 @@ export default class DialogAlertPortal {
             <Block direction="row">
               <TouchableOpacity
                 onPress={() => onPressActionButton(buttons[0])}
-                style={[styles.button, {flex: 1}]}>
+                style={[styles.button, styles.flex_1]}>
                 <Text
                   style={[
                     styles.buttonText,
@@ -272,4 +256,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(159, 159, 159, 0.05)',
     borderRadius: 35,
   },
+  center: {justifyContent: 'center', alignItems: 'center'},
+  flex_1: {flex: 1},
 });

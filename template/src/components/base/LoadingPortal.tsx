@@ -97,24 +97,33 @@ class LoadingPortal extends React.Component<Props, State> {
     return (
       <>
         {show && (
-          <View style={[StyleSheet.absoluteFill, styles.container]}>
-            <View style={styles.placeholder} />
-            <LottieView
-              source={require('src/assets/json/loader.json')}
-              autoPlay
-              loop
-              style={styles.loading}
-            />
-            <Animated.View
-              style={[styles.messageContainer, {opacity: this.textOpacity}]}>
-              <Text style={styles.message}>{message}</Text>
-            </Animated.View>
-          </View>
+          <LoadingView textOpacity={this.textOpacity} message={message} />
         )}
       </>
     );
   }
 }
+
+export const LoadingView = (props: {
+  textOpacity?: Animated.Value;
+  message?: string;
+}) => {
+  return (
+    <View style={[StyleSheet.absoluteFill, styles.container]}>
+      <View style={styles.placeholder} />
+      <LottieView
+        source={require('src/assets/json/loader.json')}
+        autoPlay
+        loop
+        style={styles.loading}
+      />
+      <Animated.View
+        style={[styles.messageContainer, {opacity: props.textOpacity}]}>
+        <Text style={styles.message}>{props.message}</Text>
+      </Animated.View>
+    </View>
+  );
+};
 
 export default LoadingPortal;
 

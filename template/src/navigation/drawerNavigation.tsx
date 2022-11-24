@@ -1,4 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import React from 'react';
