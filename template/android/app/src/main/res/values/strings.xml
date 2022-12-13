@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TemplateApp</string>
+    <string name="CodePushDeploymentKey">CodePushDeploymentKey</string>
 </resources>
