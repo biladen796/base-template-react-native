@@ -48,7 +48,7 @@ const StackNavigation = (): React.ReactElement => {
   return (
     <Stack.Navigator initialRouteName={navigationRoutes.DUMMY}>
       <Stack.Screen
-        options={TitleHeader('Dummy')}
+        options={TitleHeader('Tiến IT')}
         name={navigationRoutes.DUMMY}
         component={Dummy}
       />
